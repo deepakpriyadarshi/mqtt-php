@@ -3,6 +3,25 @@
 ## Library
 This is a simple library to interact with the MQTT broker. This library is used to connect, publich message to a topic and subscribe to a topic from the MQTT broker.
 
+## MQTT Broker
+I have worked and tested this library over the mosquitto MQTT broker. To setup the mosquitto MQTT broker, please follow the following steps.
+
+#Linux
+Ubuntu 16.04 has a fairly recent version of Mosquitto in its default software repository. Log in with your non-root user and install Mosquitto with apt-get.
+```
+sudo apt-get install mosquitto
+```
+By default, Ubuntu will start the Mosquitto service after install. 
+Now you can use the library to publish or subscribe to a topic on the broker.
+
+Topics are labels that you publish messages to and subscribe to. They are arranged as a hierarchy, so you could have sensors/outside/temp and sensors/outside/humidity, for example.
+
+#Creating a topic
+```
+mosquitto_sub -h localhost -t test
+```
+-h is used to specify the hostname of the MQTT server, and -t is the topic
+
 ## System Environment
 - PHP minimum 5.6 or minimum 7.0
 
