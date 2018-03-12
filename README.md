@@ -1,12 +1,12 @@
 ## MQTT-PHP
 
-## Library
 This is a simple library to interact with the MQTT broker. This library is used to connect, publich message to a topic and subscribe to a topic from the MQTT broker.
 
 ## MQTT Broker
 I have worked and tested this library over the mosquitto MQTT broker. To setup the mosquitto MQTT broker, please follow the following steps.
 
 #Linux
+
 Ubuntu 16.04 has a fairly recent version of Mosquitto in its default software repository. Log in with your non-root user and install Mosquitto with apt-get.
 ```
 sudo apt-get install mosquitto
