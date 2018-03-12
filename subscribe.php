@@ -4,7 +4,7 @@
 require 'MQTTPHP.php';
 
 
-$server="35.154.123.96";                                // MQTT broker server address (e.g.: mqtt.deepakpriyadarshi.com |OR| 13.214.25.124).
+$server="";                                // MQTT broker server address (e.g.: mqtt.deepakpriyadarshi.com |OR| 13.214.25.124).
 $port=1883;                                // MQTT broker port. By default it is 1883, but if you have changed it during setup you can write it here.
 $username="";                              // Enter your username (If created a user in the MQTT broker).
 $password="";                              // Enter your password (If created a user and set its password in the MQTT broker).
